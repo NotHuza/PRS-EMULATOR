@@ -1,0 +1,11 @@
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\bin\Debug\PaulModz Royale Server 2.0 v2 Fixed.exe.config
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\bin\Debug\PaulModz Royale Server 2.0 v2 Fixed.exe
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\bin\Debug\PaulModz Royale Server 2.0 v2 Fixed.pdb
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\bin\Debug\Colorful.Console.dll
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\bin\Debug\Ionic.Zlib.dll
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\bin\Debug\Sodium.dll
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\obj\Debug\Royale2Sharp.csprojAssemblyReference.cache
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\obj\Debug\Royale2Sharp.csproj.CoreCompileInputs.cache
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\obj\Debug\Royale2Sharp.csproj.CopyComplete
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\obj\Debug\PaulModz Royale Server 2.0 v2 Fixed.exe
+C:\Users\PaulCornelDeveloper\Desktop\supercell-archive\PRS - Emulator v2\Royale2Sharp\obj\Debug\PaulModz Royale Server 2.0 v2 Fixed.pdb

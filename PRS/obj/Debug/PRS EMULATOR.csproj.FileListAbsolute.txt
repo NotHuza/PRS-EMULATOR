@@ -1,0 +1,34 @@
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Huzamodz royale 2.0.exe.config
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Huzamodz royale 2.0.exe
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Huzamodz royale 2.0.pdb
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Colorful.Console.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Ionic.Zlib.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Sodium.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Microsoft.Build.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\System.IO.Compression.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\cs\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\de\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\en\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\es\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\fr\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\it\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\ja\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\ko\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\pl\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\pt-BR\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\ru\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\tr\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\obj\Debug\PRS EMULATOR.csprojAssemblyReference.cache
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\obj\Debug\PRS EMULATOR.csproj.CoreCompileInputs.cache
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\obj\Debug\PRS EMULATOR.csproj.CopyComplete
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\obj\Debug\Huzamodz royale 2.0.exe
+C:\Users\e3xme\Desktop\moja nova mapa\PRS_-_Emulator_v2\PRS - Emulator v3 fix\PRS - Emulator v3\PRS\obj\Debug\Huzamodz royale 2.0.pdb
