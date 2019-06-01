@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SSDTUnitTestPath Condition="'$(SSDTUnitTestPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB</SSDTUnitTestPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SSDTPath Condition="'$(SSDTPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130</SSDTPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{531CB1FE-1B8A-4C82-9166-6CEDBAD907CA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Royale2Sharp</RootNamespace>
+    <AssemblyName>Huzamodz royale 2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Colorful.Console, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Colorful.Console.1.1.2\lib\net452\Colorful.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zlib, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zlib.1.9.1.5\lib\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sodium, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\libsodium-net.0.10.0\lib\Net40\Sodium.dll</HintPath>
+    </Reference>
+    <Reference Include="Supercell-NaCl">
+      <HintPath>..\..\..\..\..\Downloads\Supercell-NaCl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Api\ApiManager.cs" />
+    <Compile Include="Core\Network\Gateway.cs" />
+    <Compile Include="Core\Settings\Constants.cs" />
+    <Compile Include="Core\Logger.cs" />
+    <Compile Include="Extensions\MessageWriter.cs" />
+    <Compile Include="Extensions\Reader.cs" />
+    <Compile Include="Extensions\ReaderList.cs" />
+    <Compile Include="Extensions\Varint.cs" />
+    <Compile Include="Extensions\Writer.cs" />
+    <Compile Include="Extensions\WriterList.cs" />
+    <Compile Include="Packets\Crypto\RC4\RC4.cs" />
+    <Compile Include="Packets\Crypto\RC4\Scrambler.cs" />
+    <Compile Include="Packets\Message.cs" />
+    <Compile Include="Packets\Messages\Server\AllianceData.cs" />
+    <Compile Include="Packets\Messages\Server\AllianceMessage.cs" />
+    <Compile Include="Packets\Messages\Server\AllianceStream.cs" />
+    <Compile Include="Packets\Messages\Server\GlobalList.cs" />
+    <Compile Include="Packets\Messages\Server\InBoxData.cs" />
+    <Compile Include="Packets\Messages\Server\KeepAliveOk.cs" />
+    <Compile Include="Packets\Messages\Server\LoginFailed.cs" />
+    <Compile Include="Packets\Messages\Server\LoginOk.cs" />
+    <Compile Include="Packets\Messages\Server\OwnHomeData.cs" />
+    <Compile Include="Packets\Messages\Server\SectorState.cs" />
+    <Compile Include="Packets\Messages\Server\ServerHello.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Gamefiles\csv_client\background_decos.csv" />
+    <None Include="Gamefiles\csv_client\billing_packages.csv" />
+    <None Include="Gamefiles\csv_client\client_globals.csv" />
+    <None Include="Gamefiles\csv_client\credits.csv" />
+    <None Include="Gamefiles\csv_client\effects.csv" />
+    <None Include="Gamefiles\csv_client\event_output.csv" />
+    <None Include="Gamefiles\csv_client\health_bars.csv" />
+    <None Include="Gamefiles\csv_client\helpshift.csv" />
+    <None Include="Gamefiles\csv_client\hints.csv" />
+    <None Include="Gamefiles\csv_client\locales.csv" />
+    <None Include="Gamefiles\csv_client\music.csv" />
+    <None Include="Gamefiles\csv_client\news.csv" />
+    <None Include="Gamefiles\csv_client\particle_emitters.csv" />
+    <None Include="Gamefiles\csv_client\sorted_regions\CNT_regions.csv" />
+    <None Include="Gamefiles\csv_client\sorted_regions\CN_regions.csv" />
+    <None Include="Gamefiles\csv_client\sorted_regions\JP_regions.csv" />
+    <None Include="Gamefiles\csv_client\sorted_regions\KR_regions.csv" />
+    <None Include="Gamefiles\csv_client\sounds.csv" />
+    <None Include="Gamefiles\csv_client\texts.csv" />
+    <None Include="Gamefiles\csv_client\texts_patch.csv" />
+    <None Include="Gamefiles\csv_logic\abilities.csv" />
+    <None Include="Gamefiles\csv_logic\achievements.csv" />
+    <None Include="Gamefiles\csv_logic\alliance_badges.csv" />
+    <None Include="Gamefiles\csv_logic\alliance_roles.csv" />
+    <None Include="Gamefiles\csv_logic\area_effect_objects.csv" />
+    <None Include="Gamefiles\csv_logic\arenas.csv" />
+    <None Include="Gamefiles\csv_logic\buildings.csv" />
+    <None Include="Gamefiles\csv_logic\characters.csv" />
+    <None Include="Gamefiles\csv_logic\character_buffs.csv" />
+    <None Include="Gamefiles\csv_logic\chest_order.csv" />
+    <None Include="Gamefiles\csv_logic\configuration_definitions.csv" />
+    <None Include="Gamefiles\csv_logic\content_tests.csv" />
+    <None Include="Gamefiles\csv_logic\decos.csv" />
+    <None Include="Gamefiles\csv_logic\draft_deck.csv" />
+    <None Include="Gamefiles\csv_logic\event_categories.csv" />
+    <None Include="Gamefiles\csv_logic\event_category_definitions.csv" />
+    <None Include="Gamefiles\csv_logic\event_category_enums.csv" />
+    <None Include="Gamefiles\csv_logic\event_category_object_definitions.csv" />
+    <None Include="Gamefiles\csv_logic\event_targeting_definitions.csv" />
+    <None Include="Gamefiles\csv_logic\exp_levels.csv" />
+    <None Include="Gamefiles\csv_logic\gamble_chests.csv" />
+    <None Include="Gamefiles\csv_logic\game_modes.csv" />
+    <None Include="Gamefiles\csv_logic\globals.csv" />
+    <None Include="Gamefiles\csv_logic\heroes.csv" />
+    <None Include="Gamefiles\csv_logic\locations.csv" />
+    <None Include="Gamefiles\csv_logic\npcs.csv" />
+    <None Include="Gamefiles\csv_logic\predefined_decks.csv" />
+    <None Include="Gamefiles\csv_logic\projectiles.csv" />
+    <None Include="Gamefiles\csv_logic\pve_gamemodes.csv" />
+    <None Include="Gamefiles\csv_logic\quests\attack.csv" />
+    <None Include="Gamefiles\csv_logic\quests\cast.csv" />
+    <None Include="Gamefiles\csv_logic\quests\collect.csv" />
+    <None Include="Gamefiles\csv_logic\quests\daily.csv" />
+    <None Include="Gamefiles\csv_logic\quests\donate.csv" />
+    <None Include="Gamefiles\csv_logic\quests\play.csv" />
+    <None Include="Gamefiles\csv_logic\quests\pve.csv" />
+    <None Include="Gamefiles\csv_logic\quest_order.csv" />
+    <None Include="Gamefiles\csv_logic\rarities.csv" />
+    <None Include="Gamefiles\csv_logic\regions.csv" />
+    <None Include="Gamefiles\csv_logic\resources.csv" />
+    <None Include="Gamefiles\csv_logic\resource_packs.csv" />
+    <None Include="Gamefiles\csv_logic\shop.csv" />
+    <None Include="Gamefiles\csv_logic\shop_cycle.csv" />
+    <None Include="Gamefiles\csv_logic\skins.csv" />
+    <None Include="Gamefiles\csv_logic\skin_sets.csv" />
+    <None Include="Gamefiles\csv_logic\spells_buildings.csv" />
+    <None Include="Gamefiles\csv_logic\spells_characters.csv" />
+    <None Include="Gamefiles\csv_logic\spells_heroes.csv" />
+    <None Include="Gamefiles\csv_logic\spells_other.csv" />
+    <None Include="Gamefiles\csv_logic\spell_sets.csv" />
+    <None Include="Gamefiles\csv_logic\survival_modes.csv" />
+    <None Include="Gamefiles\csv_logic\taunts.csv" />
+    <None Include="Gamefiles\csv_logic\tournament_tiers.csv" />
+    <None Include="Gamefiles\csv_logic\treasure_chests.csv" />
+    <None Include="Gamefiles\csv_logic\tutorials_home.csv" />
+    <None Include="Gamefiles\csv_logic\tutorials_npc.csv" />
+    <None Include="Gamefiles\csv_logic\tutorial_chest_order.csv" />
+    <None Include="Gamefiles\csv_logic\tve_gamemodes.csv" />
+    <None Include="Gamefiles\fingerprint.json" />
+    <None Include="packages.config" />
+    <None Include="packages\Baseclass.Contrib.Nuget.Output.2.3.0\Baseclass.Contrib.Nuget.Output.2.3.0.nupkg" />
+    <None Include="packages\Baseclass.Contrib.Nuget.Output.2.3.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" />
+    <None Include="packages\Colorful.Console.1.1.2\Colorful.Console.1.1.2.nupkg" />
+    <None Include="packages\Colorful.Console.1.1.2\Colorful.Console.nuspec" />
+    <None Include="packages\Ionic.Zlib.1.9.1.5\Ionic.Zlib.1.9.1.5.nupkg" />
+    <None Include="packages\Ionic.Zlib.1.9.1.5\Ionic.Zlib.nuspec" />
+    <None Include="packages\libsodium-net.0.10.0\libsodium-net.0.10.0.nupkg" />
+    <None Include="packages\libsodium-net.0.10.0\libsodium-net.nuspec" />
+    <None Include="packages\libsodium-net.0.10.0\output\sodium.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="packages\Baseclass.Contrib.Nuget.Output.2.3.0\build\net40\Baseclass.Contrib.Nuget.Output.Build.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\net40\Colorful.Console.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\net451\Colorful.Console.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\net452\Colorful.Console.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\net45\Colorful.Console.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\net461\Colorful.Console.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\net46\Colorful.Console.dll" />
+    <Content Include="packages\Colorful.Console.1.1.2\lib\netstandard1.3\Colorful.Console.dll" />
+    <Content Include="packages\Ionic.Zlib.1.9.1.5\lib\Ionic.Zlib.dll" />
+    <Content Include="packages\libsodium-net.0.10.0\lib\Net40\Sodium.dll" />
+    <Content Include="packages\libsodium-net.0.10.0\output\libsodium-64.dll" />
+    <Content Include="packages\libsodium-net.0.10.0\output\libsodium.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup Condition="$(VisualStudioVersion) == '15.0'">
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=13.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTesting, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Baseclass.Contrib.Nuget.Output.2.3.0\build\net40\Baseclass.Contrib.Nuget.Output.targets" Condition="Exists('..\packages\Baseclass.Contrib.Nuget.Output.2.3.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Baseclass.Contrib.Nuget.Output.2.3.0\build\net40\Baseclass.Contrib.Nuget.Output.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Baseclass.Contrib.Nuget.Output.2.3.0\build\net40\Baseclass.Contrib.Nuget.Output.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <SsdtUnitTestVersion>3.1</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="$(VisualStudioVersion) != '15.0' And '$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="$(VisualStudioVersion) != '15.0' And '$(SQLDBExtensionsRefPath)' == ''" />
+</Project>
