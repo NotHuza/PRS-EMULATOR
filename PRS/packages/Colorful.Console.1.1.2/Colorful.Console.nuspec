@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Colorful.Console</id>
+    <version>1.1.2</version>
+    <authors>Tom Akita, Muhammad Rehan Saeed, Matt Furden</authors>
+    <owners>Tom Akita,Muhammad Rehan Saeed,Matt Furden</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/tomakita/Colorful.Console/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>http://colorfulconsole.com/</projectUrl>
+    <iconUrl>http://colorfulconsole.com/images/colorful_icon_ngsize.png</iconUrl>
+    <description>Style your C# console output!</description>
+    <releaseNotes>TextFormatter indexing fix</releaseNotes>
+    <copyright>@ Tom Akita. All rights Reserved.</copyright>
+    <tags>Style Styled Output Colourful Colorful Console Command Line ASCII Art FIGlet</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="CoreCompat.System.Drawing" version="1.0.0-beta006" exclude="Build,Analyzers" />
+        <dependency id="System.Console" version="4.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Debug" version="4.0.11" exclude="Build,Analyzers" />
+        <dependency id="System.Globalization" version="4.0.11" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.Concurrent" version="4.0.12" exclude="Build,Analyzers" />
+        <dependency id="System.IO.FileSystem" version="4.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Extensions" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Linq" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Text.RegularExpressions" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Dynamic.Runtime" version="4.0.11" exclude="Build,Analyzers" />
+        <dependency id="System.Collections" version="4.0.11" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.6.1" />
+      <group targetFramework=".NETFramework4.5.1" />
+      <group targetFramework=".NETFramework4.5.2" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework=".NETFramework4.0, .NETFramework4.5, .NETFramework4.5.1, .NETFramework4.5.2, .NETFramework4.6, .NETFramework4.6.1" />
+    </frameworkAssemblies>
+    <title>Colorful.Console</title>
+  </metadata>
+</package>
