@@ -6,5 +6,11 @@
 
 ##modifiket fjg
 
-##https://github.com/jakovmarkovanovic/PRS-EMULATOR/blob/master/Screenshot_2019-06-02-18-42-11.png
+<p align="center">
+    It's a simple CSharp Clash Royale server.
+    <br />
+    <a href="https://github.com/jakovmarkovanovic/PRS-EMULATOR/blob/master/Screenshot_2019-06-02-18-42-11.png
+">
+<strong>Explore the pics »</strong></a>
+    <br />
 
