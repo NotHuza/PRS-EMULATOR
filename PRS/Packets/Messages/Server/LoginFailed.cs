@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Royale2Sharp.Utilities;
-using static Royale2Sharp.Core.Settings.Constants.LoginFailed;
+using HuzaRoyale.Utilities;
+using static HuzaRoyale.Core.Settings.Constants.LoginFailed;
 
-namespace Royale2Sharp.Packets.Messages.Server
+namespace HuzaRoyale.Packets.Messages.Server
 {
     internal class LoginFailed
     {

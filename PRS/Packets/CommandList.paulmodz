@@ -1,0 +1,18 @@
+getdata.from.PaulModz.sln;
+
+xBotCommands :
+	/clean = "Clean Data From Account" == clean.database.account.<getipaddress>;
+	/full = "Max All Cards From Account" == maximize.database.account.<getipaddress>;
+	/help = "Show All Commands List" == Show.List;
+	"Add Your Own Commands"
+	
+	require.premium = true;
+	
+	account.unlock.list {
+		
+		paulisthebest1;
+		paulisthebest2;
+		paulisthebest3;
+	}
+	
+	"You can your own codes in account.unlock.list"

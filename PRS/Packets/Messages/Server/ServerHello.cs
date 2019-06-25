@@ -1,4 +1,4 @@
-﻿namespace Royale2Sharp.Packets.Messages.Server
+﻿namespace HuzaRoyale.Packets.Messages.Server
 {
     internal class ServerHello
     {

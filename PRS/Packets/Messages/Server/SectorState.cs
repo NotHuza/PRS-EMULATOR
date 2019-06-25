@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Ionic.Zlib;
-using Royale2Sharp.Core.Settings;
-using Royale2Sharp.Utilities;
+using HuzaRoyale.Core.Settings;
+using HuzaRoyale.Utilities;
 
-namespace Royale2Sharp.Packets.Messages.Server
+namespace HuzaRoyale.Packets.Messages.Server
 {
     internal class SectorState
     {
@@ -21,12 +21,9 @@ namespace Royale2Sharp.Packets.Messages.Server
                     .Replace(" ", ""));
             decryptedpart2.AddString(Constants.OwnHomeData.StartingClanName);
             decryptedpart2.AddHexa(
-                "18 AD 48 92 08 00 B3 20 AD 1F 01 9F 03 17 00 00 00 00 2B 00 21 7F 0B 00 8D DE 59 6C 87 BB BE B7 03 02 02 26 01 7F 7F 00 00 9F BD 19 00 00 00 00 00 00 00 00 00 06"
-
+                "18 AD 48 92 08 00 B3 20 AD 1F 01 9F 03 17 00 00 00 00 2B 00 21 7F 0B 00 8D DE 59 6C 87 BB BE B7 03 02 02 26 01 7F 7F 00 00 9F BD 19 00 00 00 00 00 00 00 00 00 06 01 00 00 09 00 00 00 01 00 00 00 8E 02 F2 7D 00 00 06 7A 06 23 01 23 01 23 01 23 01 23 00 23 00 01 00 01 00 00 01 05 00 05 01 05 02 05 03 05 04 05 05 0A 0D A4 E2 01 9C 8E 03 00 00 7F 00 C0 7C 00 00 02 00 00 00 00 00 09 0D AC 36 A4 65 00 00 7F 00 80 04 00 00 01 00 00 00 00 00 0A 0D AC 36 9C 8E 03 00 00 7F 00 C0 7C 00 00 01 00 00 00 00 00 09 0D A4 E2 01 A4 65 00 00 7F 00 80 04 00 00 02 00 00 00 00 00 09 0D A8 8C 01 B8 2E 00 00 7F 00 80 04 00 00 00 00 00 00 00 00 0D 04 04 02 01 79 04 05 01 03 02 00 7F 7F 00 00 00 00 05 00 00 00 00 00 7F 7F 7F 7F 7F 7F 7F 7F 00 00 00 00"
                     .Replace(" ", ""));
-            decryptedpart2.Add(false);
-            decryptedpart2.AddHexa("00 00 09 00 00 00 01 00 00 00 8E 02 F2 7D 00 00 06 7A 06 23 01 23 01 23 01 23 01 23 00 23 00 01 00 01 00 00 01 05 00 05 01 05 02 05 03 05 04 05 05 0A 0D A4 E2 01 9C 8E 03 00 00 7F 00 C0 7C 00 00 02 00 00 00 00 00 09 0D AC 36 A4 65 00 00 7F 00 80 04 00 00 01 00 00 00 00 00 0A 0D AC 36 9C 8E 03 00 00 7F 00 C0 7C 00 00 01 00 00 00 00 00 09 0D A4 E2 01 A4 65 00 00 7F 00 80 04 00 00 02 00 00 00 00 00 09 0D A8 8C 01 B8 2E 00 00 7F 00 80 04 00 00 00 00 00 00 00 00 0D 04 04 02 01 79 04 05 01 03 02 00 7F 7F 00 00 00 00 05 00 00 00 00 00 7F 7F 7F 7F 7F 7F 7F 7F 00 00 00 00".Replace(" ", ""));
-            decryptedpart2.Add(50); //Crown tower level
+            decryptedpart2.Add(60); //Crown tower level
             decryptedpart2.AddHexa(
                 "0D A8 8C 01 88 C5 03 00 00 7F 00 C0 7C 00 00 00 00 00 00 00 00 0D 04 04 7F 7D 07 04 05 01 06 02 00 7F 7F 00 03 04"
                     .Replace(" ", ""));
@@ -51,20 +48,10 @@ namespace Royale2Sharp.Packets.Messages.Server
             decryptedpart2.AddHexa("14 28 B4 12 0A 0A 01".Replace(" ", ""));
             decryptedpart2.AddString("icon_quest_type_specialevent"); //ELIXIR ..
             decryptedpart2.AddHexa("01 0E 02 04 02 00 00 00 02 B1 12 B3 12 00 00".Replace(" ", ""));
-            decryptedpart2.Add(63); //elixir NOT MORE THAT 63
+            decryptedpart2.Add(5); //elixir NOT MORE THAT 63
             decryptedpart2.AddHexa(
-                "00 00 00 00 00 7F 7F 7F 7F 7F 7F 7F 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 AC 2F 00 A2 2B 00 AC 2F 00 A2 2B 00 A8 44 00 98 4B 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 FF 01 11 04 01 09 05 04 03 09 1B 01 13 07 8F 01 09 1C 04 00 FE 03"
-
+                "00 00 00 00 00 7F 7F 7F 7F 7F 7F 7F 7F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 AC 2F 00 A2 2B 00 AC 2F 00 A2 2B 00 A8 44 00 98 4B 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 00 00 00 00 00 00 00 A4 01 A4 01 00 FF 01 11 04 01 09 05 04 03 09 1B 01 13 07 8F 01 09 1C 04 00 FE 03 2F 00 06 09 03 09 16 07 02 0A 0C 07 96 01 09 8E 01 06 00 00 05 06 02 02 04 02 01"
                     .Replace(" ", ""));
-            //decryptedpart2.AddHexa("2F 00 38 04 03 09 16 07 02 0A 0C 07 96 01 09 8E 01 06 00 00 05 06 02 02 04 02 01".Replace(" ",""));
-
-            foreach (var cardid in Constants.OwnHomeData.Deck)
-            {
-                decryptedpart2.AddVInt(cardid);
-                decryptedpart2.AddVInt(4);
-            }
-            decryptedpart2.AddHexa("00 00 05 06 02 02 04 02 01".Replace(" ", ""));
-
             decryptedpart2.Add(3); //2 for weird things (on troops), 3 for normal
             decryptedpart2.AddHexa("00 00 00 00 00 00 00 00 0C 00 00 00 90 EE FC F9 0F 00".Replace(" ", ""));
             return part1.Concat(ZlibStream.CompressBuffer(decryptedpart2.ToArray())).ToArray();

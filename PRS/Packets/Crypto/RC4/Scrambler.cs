@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Royale2Sharp.Packets.Crypto.RC4
+namespace HuzaRoyale.Packets.Crypto.RC4
 {
     internal class Scrambler
     {
