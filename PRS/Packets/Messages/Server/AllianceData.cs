@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using HuzaRoyale.Core.Settings;
-using HuzaRoyale.Utilities;
+using Royale2Sharp.Core.Settings;
+using Royale2Sharp.Utilities;
 
-namespace HuzaRoyale.Packets.Messages.Server
+namespace Royale2Sharp.Packets.Messages.Server
 {
     internal class AllianceData
     {

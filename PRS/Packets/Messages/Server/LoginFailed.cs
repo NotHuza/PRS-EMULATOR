@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
-using HuzaRoyale.Utilities;
-using static HuzaRoyale.Core.Settings.Constants.LoginFailed;
+﻿using System;
+using System.Collections.Generic;
+using Royale2Sharp.Utilities;
+using static Royale2Sharp.Core.Settings.Constants.LoginFailed;
 
-namespace HuzaRoyale.Packets.Messages.Server
+namespace Royale2Sharp.Packets.Messages.Server
 {
     internal class LoginFailed
     {
+        public static object LockAccount { get; internal set; }
+
         internal static byte[] Payload(Error errorcode)
         {
             var packet = new List<byte>();
@@ -46,5 +49,7 @@ namespace HuzaRoyale.Packets.Messages.Server
 
             return packet.ToArray();
         }
+
+  
     }
 }

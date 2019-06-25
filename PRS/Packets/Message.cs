@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
-using HuzaRoyale.Core;
-using HuzaRoyale.Core.Settings;
-using HuzaRoyale.Packets.Crypto.RC4;
-using HuzaRoyale.Packets.Messages.Server;
-using HuzaRoyale.Utilities;
+using Royale2Sharp.Core;
+using Royale2Sharp.Core.Settings;
+using Royale2Sharp.Packets.Crypto.RC4;
+using Royale2Sharp.Packets.Messages.Server;
+using Royale2Sharp.Utilities;
 
-namespace HuzaRoyale.Packets
+namespace Royale2Sharp.Packets
 {
     internal class Message
     {
@@ -77,9 +77,9 @@ namespace HuzaRoyale.Packets
                 case 10101:
                     Console.WriteLine(BitConverter.ToString(Payload).Replace("-", ""));
                     var ToProcess = LoginOk.Array();
-                    _handler.Send(PacketBuilder(20104, 1, ToProcess));
-                    //var ToProcess2 = OwnHomeData.OwnHomeDataArray();
-                    //_handler.Send(PacketBuilder(24101, 1, ToProcess2));
+                     _handler.Send(PacketBuilder(20104, 1, ToProcess));
+                   // var ToProcess2 = OwnHomeData.OwnHomeDataArray();
+                   // _handler.Send(PacketBuilder(24101, 1, ToProcess2));
                     var ToProcess2 = SectorState.Array();
                     _handler.Send(PacketBuilder(21903, 1, ToProcess2));
                     Logger.Log($"We Sent SectorState", Logger.DefCon.DEBUGSERVER);
@@ -103,38 +103,38 @@ namespace HuzaRoyale.Packets
                     Console.WriteLine("Before : " + BitConverter.ToString(Payload).Replace("-", ""));
                     RC4.Decrypt(ref Payload);
                     Console.WriteLine("After : " + BitConverter.ToString(Payload).Replace("-", ""));
-                    //var EndClientTurnMessage = Payload;
+                   /* var EndClientTurnMessage = Payload;
 
-                    //int Tick;
-                    //int Checksum;
-                    //int Count;
+                    int Tick;
+                    int Checksum;
+                    int Count;
 
-                    //byte[] Commands;
+                    byte[] Commands;
 
-                    //// Begin Reading the ECT payload.
-                    //using (var Reader = new Reader(Payload))
-                    //{
-                    //    Tick = Reader.ReadVInt();
-                    //    Checksum = Reader.ReadVInt();
-                    //    Count = Reader.ReadVInt();
+                    /// Begin Reading the ECT payload.
+                    using (var Reader = new Reader(Payload))
+                    {
+                        Tick = Reader.ReadVInt();
+                        Checksum = Reader.ReadVInt();
+                        Count = Reader.ReadVInt();
 
-                    //    Commands = Reader.ReadBytes((int)(Reader.BaseStream.Length - Reader.BaseStream.Position));
-                    //}
+                        Commands = Reader.ReadBytes((int)(Reader.BaseStream.Length - Reader.BaseStream.Position));
+                    }
 
-                    //Console.WriteLine("Tick: " + Tick);
-                    //Console.WriteLine("Checksum: " + Checksum);
-                    //Console.WriteLine("Count: " + Count);
+                     Console.WriteLine("Tick: " + Tick);
+                     Console.WriteLine("Checksum: " + Checksum);
+                     Console.WriteLine("Count: " + Count);
 
-                    //if (Count > -1 && Count <= 50)
-                    //    using (var Reader = new Reader(Commands))
-                    //    {
-                    //        for (var i = 0; i < Count; i++)
-                    //        {
-                    //            var CommandID = Reader.ReadVInt();
+                     if (Count > -1 && Count <= 50)
+                         using (var Reader = new Reader(Commands))
+                         {
+                            for (var i = 0; i < Count; i++)
+                            {
+                                 var CommandID = Reader.ReadVInt();
 
-                    //            Console.WriteLine("Waiting to handle " + CommandID);
-                    //        }
-                    //    }
+                                Console.WriteLine("Waiting to handle " + CommandID);
+                             }
+                        }*/
                     break;
                 case 10905:
                     var ToProcess6 = InBoxData.Payload();

@@ -1,4 +1,4 @@
-﻿namespace HuzaRoyale.Packets.Messages.Server
+﻿namespace Royale2Sharp.Packets.Messages.Server
 {
     internal class LoginOk
     {
